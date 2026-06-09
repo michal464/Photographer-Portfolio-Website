@@ -1,0 +1,121 @@
+* {
+    font-family: cursive;
+}
+
+body {
+    background-color: #b2b0b0;
+    margin: 0;
+    margin-top: 10vw;
+    padding: 0;
+    overflow-y: scroll;
+}
+
+header iframe {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1;
+    direction: ltr;
+}
+
+h1 {
+    display: flex;
+    font-size: 2vw;
+    color: white;
+    font-weight: bold;
+    justify-content: center;
+}
+
+.frames-table {
+    width: 70%;
+    border-collapse: collapse;
+    margin: 20px auto;
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.frames-table th,
+.frames-table td {
+    padding: 15px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+.frames-table th {
+    background-color: #f4f4f4;
+    color: #555;
+}
+
+.frames-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.frames-table tr:hover {
+    background-color: #f1f1f1;
+    cursor: pointer;
+}
+
+input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+footer iframe {
+    width: 100%;
+    height: 23vw;
+    margin-bottom: 0px;
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        margin-top: 5vw;
+    }
+
+    h1 {
+        font-size: 5vw;
+        margin-top: 10vw;
+    }
+
+    .frames-table {
+        width: 100%;
+        margin: 10px 0;
+        font-size: 4vw;
+        border-collapse: separate;
+        border-spacing: 0;
+        direction: ltr;
+    }
+
+    .frames-table thead {
+        display: none;
+    }
+
+    .frames-table tr {
+        display: block;
+        margin-bottom: 15px;
+        border-bottom: 1px solid #ddd;
+        padding: 10px;
+        background: #fff;
+        border-radius: 8px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .frames-table td {
+        display: flex;
+        margin-bottom: 10px;
+        padding: 5px 10px;
+    }
+
+    .frames-table td:last-child {
+        margin-bottom: 0;
+    }
+
+    .frames-table td:before {
+        content: attr(data-label);
+        font-weight: bold;
+        color: #555;
+        margin-right: 10px;
+    }
+}

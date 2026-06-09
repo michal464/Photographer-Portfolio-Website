@@ -1,0 +1,88 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+}
+
+header iframe {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1;
+    direction: ltr;
+}
+
+main {
+    margin-top: 80px;
+    padding: 50px;
+    text-align: center;
+    background-color: #ffffff;
+    color: #333333;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    max-width: 900px;
+    margin: 100px auto;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 40px;
+    color: #ff6f61;
+}
+
+.contact-options {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.contact-option {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #d5d8db;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.contact-option:hover {
+    transform: translateY(-5px);
+}
+
+.contact-option h2 {
+    font-size: 1.8em;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    color: #333333;
+}
+
+.contact-icon {
+    height: 24px;
+    margin-right: 10px;
+}
+
+.contact-option p {
+    font-size: 1.2em;
+    margin: 0;
+    line-height: 1.5;
+    color: #666666;
+}
+
+a {
+    color: #ff6f61;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
